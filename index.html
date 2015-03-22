@@ -96,8 +96,6 @@
         setCurrentTaxTypeDislay(tax_type);
      }
 
-
-
      function setCurrentTaxTypeDislay(tax_type) {
       type_links = document.getElementsByClassName("type_link");
       for (var i = 0; i < type_links.length; i++) {
@@ -148,7 +146,7 @@
     }
     </style>
   </head>
-<body bgcolor=white>
+<body bgcolor=white onload="drawCurve('single')">
 
 <div id='middle'>
   <h1>US Federal Income Tax Estimate for 2014</h1>
