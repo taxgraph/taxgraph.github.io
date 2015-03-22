@@ -1,12 +1,12 @@
 <html><head>
   <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     ga('create', 'UA-61051210-1', 'auto');
-     ga('send', 'pageview');
-   </script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+   ga('create', 'UA-61051210-1', 'auto');
+   ga('send', 'pageview');
+  </script>
 
     <script src="data.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -96,6 +96,8 @@
         setCurrentTaxTypeDislay(tax_type);
      }
 
+
+
      function setCurrentTaxTypeDislay(tax_type) {
       type_links = document.getElementsByClassName("type_link");
       for (var i = 0; i < type_links.length; i++) {
@@ -160,21 +162,22 @@
   <div id='tax_curve' ></div>
   <div id='info'>
   <h1>About</h1>
-  The purpose of this site is to give tax filers a super simple visualization of how taxes work in the United States.  The information is simply a better rendering of the official tax information, available here: <a href=http://en.wikipedia.org/wiki/Rate_schedule_(federal_income_tax)#Format>IRS rate schedules for 2014</a>, and <a href=http://www.irs.gov/pub/irs-pdf/i1040tt.pdf>US Tax Tables 2014</a>.
+  The purpose of this page is to give tax filers a super simple visualization of how taxes work in the United States.  The information is simply a better rendering of the official tax information, available here: <a href=http://en.wikipedia.org/wiki/Rate_schedule_(federal_income_tax)#Format>IRS rate schedules for 2014</a>, and <a href=http://www.irs.gov/pub/irs-pdf/i1040tt.pdf>US Tax Tables 2014</a>.
   
   <p> I hope this site busts the following common myth:
   <div style="background-color: rgb(250,250,250); padding: 5px; margin: 10px; font-size: 85%; border: 1px dotted lightgray"><i>"If I earn just a little more money, I end up with less after-tax income because I got bumped into a higher tax bracket."</i></div>  
-  This is simply impossible.  The US uses a <i>graduated tax rate</i>, which means each income bracket tax rate is only applied on income amounts over that income bracket, not on all your monies!  Read about this here:
-  <a href=http://en.wikipedia.org/wiki/Income_tax_in_the_United_States#Marginal_tax_rates>http://en.wikipedia.org/wiki/Income_tax_in_the_United_States#Marginal_tax_rates</a>
+  This is simply impossible.  The US uses a <i>graduated tax rate</i>, which means each income bracket tax rate is only applied on income amounts over that income bracket, not on all your monies!  Read more about this
+  <a href=http://en.wikipedia.org/wiki/Income_tax_in_the_United_States#Marginal_tax_rates>here.</a>
 
   <br><br>
   <b>Is it accurate?</b> The above data conveys the tax rate schedule put out by the IRS.  It does not cover all sorts of possible credits or deductions you might be eligible for.  Such credits and deductions can only <i>lower</i> your owed tax further, so think of this site as providing a rough conservative estimate of what you owe.
-  
+  <br><br>
+  <b>I'd like to check your work.</b>Ok, here is my script: <a href=https://github.com/taxgraph/taxgraph.github.io/blob/master/calctax.py>calctax.py</a>
   <br><br>
   <b>Disclaimer:</b> I'm a programmer, not a lawyer.  Nothing here should be construed as official tax advice.
 
   <br><br>
-  <b>Something to say, or want to argue?:</b> <a href=mailto:taxgraph1@gmail.com>taxgraph1@gmail.com<a>
+  <b>Something to say, or want to argue?</b> <a href=mailto:taxgraph1@gmail.com>taxgraph1@gmail.com<a>
   </div>
  </div>
   
