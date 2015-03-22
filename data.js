@@ -30,3 +30,4 @@ function toolTipDisplayData(income, tax) {
   console.log('income: '+income+', tax: '+tax)
    return '<div id="tooltip"><table border=0><tr><td align=right>If you earned:</td><td align=right>'+formatMoney(income)+'</td></tr><tr><td align=right>You owe about:</td><td align=right>'+formatMoney(tax)+'</td></tr><tr><td align=right>Effective tax rate:</td><td align=right>'+Math.round(1000*tax/income)/10+'%</td><tr></table></div>';
 }
+
