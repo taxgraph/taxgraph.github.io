@@ -24,6 +24,6 @@ def CalcTax(income, brackets):
 
 
 if __name__ == '__main__':
-    for i in range(0, int(3.2*10**5), 10**3):
+    for i in range(0, 3*10**5, 10**3):
         print "[%d,%d]," % (i, int(CalcTax(i, brackets_head)))
             
