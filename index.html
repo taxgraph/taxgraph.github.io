@@ -96,8 +96,6 @@
         setCurrentTaxTypeDislay(tax_type);
      }
 
-
-
      function setCurrentTaxTypeDislay(tax_type) {
       type_links = document.getElementsByClassName("type_link");
       for (var i = 0; i < type_links.length; i++) {
@@ -141,11 +139,7 @@
         border: 1px dotted lightgray;
         margin: auto;
         padding: 0px 20px 20px 20px;  
-<<<<<<< HEAD
-      width: 80%;
-=======
-      width: 60%;
->>>>>>> origin/master
+        width: 80%;
       }
     div#tax_types {
       padding: 10px;
@@ -155,8 +149,8 @@
 <body bgcolor=white onload="drawCurve('single')">
 
 <div id='middle'>
-  <h1>US Federal Income Tax Estimate for 2014</h1>
-  <h2>~~~ simplified ~~~ </h2>
+  <h1>TaxGraph</h1>
+  <h3>US Federal Income Tax Estimate for 2014, simplified.</h3><br><br>
   <div id='tax_types'>
     <a class='type_link' href="javascript:void(0)" id=single onclick="drawCurve('single');">Single</a>
     <a class='type_link' href="javascript:void(0)" id=married-joint onclick="drawCurve('married-joint');">Married Filing Jointly</a>
